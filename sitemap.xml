@@ -3,57 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/posts/multiplex-sarscov2-concept/</loc>
+    <loc>/posts/multiplex-sarscov2-concept/</loc>
     <lastmod>2020-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>/</loc>
     <lastmod>2020-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2020-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/covid19/</loc>
+    <loc>/tags/covid19/</loc>
     <lastmod>2020-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/diagnostics/</loc>
+    <loc>/tags/diagnostics/</loc>
     <lastmod>2020-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/multiplex/</loc>
+    <loc>/tags/multiplex/</loc>
     <lastmod>2020-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/ngs/</loc>
+    <loc>/tags/ngs/</loc>
     <lastmod>2020-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2020-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/sarscov2/</loc>
+    <loc>/tags/sarscov2/</loc>
     <lastmod>2020-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2020-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
 </urlset>
