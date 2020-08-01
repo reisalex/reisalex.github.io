@@ -32,22 +32,22 @@
     
     <item>
       <title></title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>I am a PhD student in the Chemical Engineering department at Penn State University studying synthetic biology. My work includes modeling efforts to predict gene expression levels, developing scaled systems to simultaneously regulate dozens of genes in vivo, and developing other assorted biotechnologies for areas including energy, materials, and medicine. The connective tissue behind these seemingly different projects is the study and application of fundamental biophsyical principles, such as nucleic acid sequence-to-function relations.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>/publications/</link>
-      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/publications/</guid>
       <description>Reis, A. C., &amp;amp; Salis, H. (2017). An automated model test system for systematic development and improvement of gene expression models. bioRxiv, 193367. [link]
   Reis, A. C., Halper, S. M., Vezeau, G. E., Cetnar, D. P., Hossain, A., Clauer, P. R., &amp;amp; Salis, H. M. (2019). Simultaneous repression of multiple bacterial genes using nonrepetitive extra-long sgRNA arrays. Nature biotechnology, 37(11), 1294-1301. [link]
   Hossain, A., Lopez, E.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/about/</link>
-      <pubDate>Fri, 24 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
-      <description>I am a PhD student in the Chemical Engineering department at Penn State University studying synthetic biology. My work includes modeling efforts to predict gene expression levels, developing scaled systems to simultaneously regulate dozens of genes in vivo, and developing other assorted biotechnologies for areas including energy, materials, and medicine. The connective tissue behind these seemingly different projects is the study and application of fundamental biophsyical principles, such as nucleic acid sequence-to-function relations.</description>
     </item>
     
   </channel>
