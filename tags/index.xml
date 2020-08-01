@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on </title>
+    <title>Tags on Alex Reis</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on </description>
+    <description>Recent content in Tags on Alex Reis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright 2020</copyright>
-    <lastBuildDate>Wed, 25 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>covid19</title>
       <link>/tags/covid19/</link>
-      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/covid19/</guid>
       <description></description>
@@ -24,7 +24,7 @@
     <item>
       <title>diagnostics</title>
       <link>/tags/diagnostics/</link>
-      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/diagnostics/</guid>
       <description></description>
@@ -33,7 +33,7 @@
     <item>
       <title>multiplex</title>
       <link>/tags/multiplex/</link>
-      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/multiplex/</guid>
       <description></description>
@@ -42,7 +42,7 @@
     <item>
       <title>ngs</title>
       <link>/tags/ngs/</link>
-      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/ngs/</guid>
       <description></description>
@@ -51,7 +51,7 @@
     <item>
       <title>sarscov2</title>
       <link>/tags/sarscov2/</link>
-      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/sarscov2/</guid>
       <description></description>

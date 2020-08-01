@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on </title>
+    <title>Posts on Alex Reis</title>
     <link>/posts/</link>
-    <description>Recent content in Posts on </description>
+    <description>Recent content in Posts on Alex Reis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright 2020</copyright>
-    <lastBuildDate>Wed, 25 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A multiplex test for diagnosing respiratory virus infections simultaneously in 10,000 patients</title>
+      <link>/posts/elsas/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/elsas/</guid>
+      <description>Synthetic biologists, our group included, have been drawn by the power of CRISPR technologies1 to completely revolutionize how we program cell behavior, for example, by designing programmable CRISPR-based genetic circuits. Genetic circuits, like digital ones, take input signals from the surrounding environment (e.g. relevant biologics, chemicals, temperature, UV), and through a series of logic gates, perform computation or “signal processing”, with useful output that can be read out or passed to biological actuators within a programmed cell.</description>
+    </item>
     
     <item>
       <title>A multiplex test for diagnosing respiratory virus infections simultaneously in 10,000 patients</title>
