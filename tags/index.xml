@@ -13,20 +13,20 @@
     
     
     <item>
-      <title>covid19</title>
-      <link>/tags/covid19/</link>
+      <title>crispr</title>
+      <link>/tags/crispr/</link>
       <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/covid19/</guid>
+      <guid>/tags/crispr/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>diagnostics</title>
-      <link>/tags/diagnostics/</link>
+      <title>elsa</title>
+      <link>/tags/elsa/</link>
       <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/diagnostics/</guid>
+      <guid>/tags/elsa/</guid>
       <description></description>
     </item>
     
@@ -40,9 +40,45 @@
     </item>
     
     <item>
+      <title>regulation</title>
+      <link>/tags/regulation/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/regulation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>synbio</title>
+      <link>/tags/synbio/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/synbio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>covid19</title>
+      <link>/tags/covid19/</link>
+      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/covid19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>diagnostics</title>
+      <link>/tags/diagnostics/</link>
+      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/diagnostics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ngs</title>
       <link>/tags/ngs/</link>
-      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/ngs/</guid>
       <description></description>
@@ -51,7 +87,7 @@
     <item>
       <title>sarscov2</title>
       <link>/tags/sarscov2/</link>
-      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/sarscov2/</guid>
       <description></description>

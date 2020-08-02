@@ -18,12 +18,12 @@
   </url>
   
   <url>
-    <loc>/tags/covid19/</loc>
+    <loc>/tags/crispr/</loc>
     <lastmod>2020-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/diagnostics/</loc>
+    <loc>/tags/elsa/</loc>
     <lastmod>2020-08-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -33,23 +33,43 @@
   </url>
   
   <url>
-    <loc>/tags/ngs/</loc>
-    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/posts/</loc>
     <lastmod>2020-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/sarscov2/</loc>
+    <loc>/tags/regulation/</loc>
+    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/synbio/</loc>
     <lastmod>2020-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
     <lastmod>2020-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/covid19/</loc>
+    <lastmod>2020-03-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/diagnostics/</loc>
+    <lastmod>2020-03-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ngs/</loc>
+    <lastmod>2020-03-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sarscov2/</loc>
+    <lastmod>2020-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
