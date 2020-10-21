@@ -36,11 +36,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>I am a PhD student in the Chemical Engineering department at Penn State University studying synthetic biology. My work focuses on developing models and tools to make engineering biology easier and more scalable!
-My work includes modeling the biophysics of translation,
-developing scaled systems to simultaneously regulate dozens of genes in vivo,
-and developing other assorted biotechnologies for areas including energy, materials, and medicine.
-The connective tissue behind these seemingly different projects is the study and application of fundamental biophsyical principles, such as nucleic acid sequence-to-function relations.</description>
+      <description>Synthetic biology promises to tackle some of the most pressing global issues in areas such as medicine, materials, and the environment. The field, however, still remains a bespoke, insider craft and has far to go to becoming a mature engineering discpline. If you&amp;rsquo;re a biological engineer, perhaps you&amp;rsquo;ve faced challenges related to the general lack of understanding of the genetic code of life, DNA. My research focuses on fundamental challenges faced by many, with a focus on developing biophysical sequence-function models of gene expression.</description>
     </item>
     
     <item>
