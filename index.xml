@@ -6,7 +6,7 @@
     <description>Recent content on Alexander C. Reis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© {year}</copyright>
+    <copyright>© {year} Alex Camp Reis</copyright>
     <lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Simultaneous repression of many bacterial genes using ELSAs</title>
@@ -32,7 +32,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>I&amp;rsquo;m a hybrid computational-experimental synthetic biology researcher, leveraging biophysical modeling and omics technologies to enable rational engineering of biology. I recently received my PhD under the mentorship of Dr. Howard Salis at Penn State University. My dissertation covered a variety of research topics including biophysical modeling of translation initation rate, nonrepetitive design of DNA, and scaled multiplex CRISPR interference. I&amp;rsquo;m a Texas native, graduated from Rice University with a BS in Chemical and Biomolecular Engineering, and worked at Glycos Biotechnologies Inc.</description>
+      <description>Hello! I&amp;rsquo;m a scientist working in a growing field known as synthetic biology. Synthetic biology, or synbio, aims at harnessing biological systems to tackle global issues in energy, health, materials, and the environment. My work specifically leverages biophysical modeling and omics technologies to help synbio develop into a mature engineering discpline, in other words, to make engineering biology easier!
+I recently received my PhD in Chemical Engineering under Dr. Howard Salis at Penn State University.</description>
     </item>
     
     <item>
@@ -41,9 +42,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/</guid>
-      <description>Advanced biophysical modeling of translation initiation in bacteria
-Nonrepetitive &amp;ldquo;extra-long&amp;rdquo; sgRNA arrays (ELSAs) to enable scalable multiplex CRISPR
-Applying next-generation sequencing for high-throughput COVID-19 testing</description>
+      <description>Coming soon!</description>
     </item>
     
     <item>
@@ -62,17 +61,6 @@ Google Docs 2020
 [URL]
 Automated design of thousands of nonrepetitive parts for engineering stable genetic systems.
 Ayaan Hossain, Eriberto Lopez, Sean M. Halper, Daniel P.</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>/publications_old/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/publications_old/</guid>
-      <description>Reis, A. C., &amp;amp; Salis, H. M. (2020). An automated model test system for systematic development and improvement of gene expression models. ACS Synthetic Biology, 9(11), 3145-3156. [URL]
-Reis, A. C., Hossain, S. A., &amp;amp; Salis, H. M. (2020). A massively parallel COVID-19 diagnostic assay for simultaneous testing of 19200 patient samples. Google Docs, Mar. [URL]
-Hossain, A., Lopez, E., Halper, S. M., Cetnar, D. P., Reis, A. C., Strickland, D.</description>
     </item>
     
   </channel>
