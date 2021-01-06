@@ -9,20 +9,20 @@
     <copyright>© {year} Alex Camp Reis</copyright>
     <lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/multiplex/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Simultaneous repression of many bacterial genes using ELSAs</title>
-      <link>/blog/elsas/</link>
+      <title>Regulating many genes with CRISPR and ELSAs</title>
+      <link>/blog/post2/</link>
       <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/elsas/</guid>
+      <guid>/blog/post2/</guid>
       <description>Synthetic biologists, our group included, have been drawn by the power of CRISPR technologies1 to completely revolutionize how we program cell behavior, for example, by designing programmable CRISPR-based genetic circuits. Genetic circuits, like digital ones, take input signals from the surrounding environment (e.g. relevant biologics, chemicals, temperature, UV), and through a series of logic gates, perform computation or “signal processing”, with useful output that can be read out or passed to biological actuators within a programmed cell.</description>
     </item>
     
     <item>
-      <title>An NGS assay to test thousands of patients for COVID-19</title>
-      <link>/blog/multiplex-sarscov2-concept/</link>
+      <title>Using NGS for COVID-19 testing</title>
+      <link>/blog/post1/</link>
       <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/multiplex-sarscov2-concept/</guid>
+      <guid>/blog/post1/</guid>
       <description>Over the last few weeks of the COVID-19 pandemic, limited availability and throughput of the existing COVID-19 test kit has hindered our ability to monitor the global spread of the causal virus, SARS-CoV-2. As of March 24nd, the CDC reported having only tested 4,651 and 83,391 patients across the U.S. in CDC and public health laboratories, respectively, since January 18th &amp;ndash; with the bulk of those tests done within the past week.</description>
     </item>
     

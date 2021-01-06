@@ -9,11 +9,11 @@
     <copyright>© {year} Alex Camp Reis</copyright>
     <lastBuildDate>Wed, 25 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/sarscov2/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>An NGS assay to test thousands of patients for COVID-19</title>
-      <link>/blog/multiplex-sarscov2-concept/</link>
+      <title>Using NGS for COVID-19 testing</title>
+      <link>/blog/post1/</link>
       <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/multiplex-sarscov2-concept/</guid>
+      <guid>/blog/post1/</guid>
       <description>Over the last few weeks of the COVID-19 pandemic, limited availability and throughput of the existing COVID-19 test kit has hindered our ability to monitor the global spread of the causal virus, SARS-CoV-2. As of March 24nd, the CDC reported having only tested 4,651 and 83,391 patients across the U.S. in CDC and public health laboratories, respectively, since January 18th &amp;ndash; with the bulk of those tests done within the past week.</description>
     </item>
     

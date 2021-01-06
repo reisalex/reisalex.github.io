@@ -35,7 +35,7 @@
   
   
     
-    <link type="text/css" rel="stylesheet" href="/css/post.min.609834176cfcf34cbf6745a4a25d61b8062dcfe8587294c66736de3e2868e3c6.css" integrity="sha256-YJg0F2z880y/Z0Wkol1huAYtz&#43;hYcpTGZzbePiho48Y="/>
+    <link type="text/css" rel="stylesheet" href="/css/post.min.5ec73e86a613700019aa476e8830f7a6833b4625b229ad71222548a4088c9636.css" integrity="sha256-Xsc&#43;hqYTcAAZqkduiDD3poM7RiWyKa1xIiVIpAiMljY="/>
   
     
     <link type="text/css" rel="stylesheet" href="/css/custom.min.048641d66d2a87e08639cda82e5555a6285db58b431bca9906e2aee5e9629a3f.css" integrity="sha256-BIZB1m0qh&#43;CGOc2oLlVVpihdtYtDG8qZBuKu5elimj8="/>
@@ -113,7 +113,36 @@
           </header>
           <article class="post__content">
               
-<p>Coming soon!</p>
+<p><a href="https://www.denovodna.com/software/design_rbs_calculator" 
+  
+   target="_blank" rel="noreferrer noopener" 
+><strong>RBS Calculator</strong></a>
+<br>
+In 2009, Salis <em>et al.</em> published RBS Calculator v1.0, a thermodynamic equilibrium model of translation initiation rate in bacteria, for tunable protein expression control. Since then a number of minor improvements have been made to the model to increase its accuracy (to v2.1). I am actively developing a &ldquo;v3.0&rdquo; to account for non-equilibirium behavior of RNA folding dynamics at the ribosome binding site. More on this soon.</p>
+<p><a href="https://github.com/reisalex/pyfold" 
+  
+   target="_blank" rel="noreferrer noopener" 
+><strong>pyfold</strong></a>
+<br>
+As part of the development effort for RBS Calculator v3.0, I am porting &ldquo;kfold&rdquo; (Fortran) to Cython to allow easier integration and updating of nearest neighbor energy parameters. Although this repo is public, this work is ongoing and this tool is currently unfinished. The README and this description will be updated when this project is finished.</p>
+<p><a href="https://github.com/reisalex/SynBioMTS" 
+  
+   target="_blank" rel="noreferrer noopener" 
+><strong>SynBioMTS</strong></a>
+<br>
+This open source Model Test System includes a compiled database of thousands of 5' UTR variants and a simple object-oriented interface to test and compare sequence-function models of gene expression (Reis &amp; Salis, 2020). While we demonstrated use of the SynBioMTS on models of translation initiation rate, this code can be readily extended to other sequence-function models, for example, ones that predict promoter activity or transcription termination efficiency.</p>
+<p><a href="https://github.com/hsalis/SalisLabCode/tree/master/ELSA_Calculator" 
+  
+   target="_blank" rel="noreferrer noopener" 
+><strong>ELSA Calculator</strong></a>
+<br>
+This tool uses a genetic algorithm to assemble nonrepetitive genetic parts including promoters, sgRNA handles, terminators and spacers in the optimal configuration to maximize synthesis success and genetic stability of designed extra-long sgRNA arrays (ELSAs) for multiplex CRISPR applications (Reis <em>et al.</em>, 2019).</p>
+<p><a href="" 
+  
+  
+><strong>ParseFold</strong></a>
+<br>
+Code used to parse nucleic acid secondary structures represented in dot-parantheses format into usable structure graphs for efficient searching and processing of motifs of interest.</p>
 
 
               
@@ -212,7 +241,7 @@
     </filter>
   </defs>
 </svg>
-            <p>© 2020 Alex Camp Reis</p>
+            <p>© 2021 Alex Camp Reis</p>
           </footer>
           </div>
       </div>
