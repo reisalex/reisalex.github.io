@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Machine learning attempts de novo protein design | Alexander C. Reis</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Machine learning attempts de novo protein design" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="https://twitter.com/alexcampreis" />
+  <meta name="twitter:creator" content="https://twitter.com/alexcampreis" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.5ec73e86a613700019aa476e8830f7a6833b4625b229ad71222548a4088c9636.css" integrity="sha256-Xsc&#43;hqYTcAAZqkduiDD3poM7RiWyKa1xIiVIpAiMljY="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.048641d66d2a87e08639cda82e5555a6285db58b431bca9906e2aee5e9629a3f.css" integrity="sha256-BIZB1m0qh&#43;CGOc2oLlVVpihdtYtDG8qZBuKu5elimj8="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/"
+      },
+      "articleSection" : "blog",
+      "name" : "Machine learning attempts de novo protein design",
+      "headline" : "Machine learning attempts de novo protein design",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2020",
+      "datePublished": "2020-10-25 00:00:00 \u002b0000 UTC",
+      "dateModified" : "2020-10-25 00:00:00 \u002b0000 UTC",
+      "url" : "\/blog\/post3\/",
+      "wordCount" : "1318",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-162028273-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">home</a>
+      </li>
+    
+      <li>
+        <a  href="/about">about</a>
+      </li>
+    
+      <li>
+        <a  href="/publications">papers</a>
+      </li>
+    
+      <li>
+        <a  href="/projects">projects</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/blog">blog</a>
+      </li>
+    
+      <li>
+        <a  href="/files/cv.pdf">cv</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Machine learning attempts de novo protein design</h1>
+            <time datetime="2020-10-25 00:00:00 &#43;0000 UTC" class="post__date">Oct 25 2020</time> 
+          </header>
+          <article class="post__content">
+              
+<p>Model-driven protein engineering is the future of synbio. The ability to engineer proteins to do any chemical conversion imaginable (enzymes) or to perform complex biological tasks like edit or regulate genes would revolutionize the way we engineer biology. Existing tools however remain largely limited in what they can make, with most research still focused on getting designed proteins to fold correctly<sup>1</sup>, so protein engineering remains one of synthetic biology&rsquo;s grand challenges.</p>
+<p>Even the ability to redesign existing enzymes to function optimally under non-native condition remains a hard problem&hellip;</p>
+<p><img src="/img/post3/title.png" alt=""></p>
+<p>Back in July, a team of researchers demonstrated a novel approach for enzyme design that learns from existing enzyme sequences to design new ones. Published in <em>Science</em>, the approach uses machine learning to teach a statistical model the interaction couplings of an enzyme from thousands of natural homologs, and by sampling this statistical model, can design new functional enzyme variants with artificial amino acid sequences<sup>2</sup>. For the study, Russ <em>et al.</em> applied their model to design and characterize functional <em>de novo</em> chorismate mutase (CM) enzymes in <em>E. coli</em> with up to 82% sequence divergence from the natural <em>E. coli</em> CM.</p>
+<p>The article interested me for a few reasons:</p>
+<ol>
+<li>
+<p>With machine learning, the authors train a statistical energy model that describes the pairwise interaction couplings of amino acid residues in a protein.</p>
+</li>
+<li>
+<p>The model is trained using sequence information alone (no data). That is, they learn from evolution - thousands of variants of the same protein across many organisms (i.e. homologs).</p>
+</li>
+<li>
+<p>The authors use a high-throughput experimental method that couples next-generation sequencing (NGS) and a selection-based assay in <em>E. coli</em> to screen for functional chorismate mutase variants.</p>
+</li>
+</ol>
+<p>At first I wrote a piece commending the work, but then I realized I didn&rsquo;t agree with what I initially wrote. The research article has some glaring issues that make it problematic from a synthetic biologist&rsquo;s perspective. So in this blog post, I decided to describe these problems with the hope of providing insight into how a synthetic biologist thinks about protein engineering.</p>
+<h2 id="summary">Summary<a class="anchor" href="#summary">#</a></h2>
+<p><img src="/img/post3/figure1.png" alt=""></p>
+<p>Briefly, the model combines Direct Coupling Analysis with a machine learning technique called Boltzmann machine learning (bmDCA) to predict contacts between amino acids of a protein. The concept of DCA is to extract the observed frequencies and pairwise occurrences of the amino acids in a multiple sequence alignment (MSA) to infer a model that predicts the statistical energy of a new sequence variant<sup>3</sup>. Traditional DCA is extremely computationally intensive, but with the aid of Boltzmann machine learning, the authors were able to readily train the bmDCA model on 1,259 natural CM sequences from bacterial, archaeal, fungal and plant origins (top).</p>
+<p>Next, the authors used a selection-based assay, termed select-seq, to screen a library of 1,618 model-designed CM variants. Chorismate mutase occurs at the branch of the shikimate pathway, an essential step for the biosynthesis of two amino acids, phenylalanine and tyrosine (bottom).</p>
+<p><img src="/img/post3/figure2.png" alt=""></p>
+<p>In order to test the CM variants, the authors transformed the library into a CM-deficient E. coli strain and grew the library in medium lacking phenylalanine and tyrosine. Deep sequencing before and after the assay was used to compute a relative enrichment score of each variant. Of the 1,618 artificial sequences, an impressive 481 variants (about 30%) rescued growth. Perhaps even more impressively, these protein sequences had only anywhere from 42 to 92% sequence identity to any of the natural CMs. The authors validated five of the enriched artificial CMs with a biochemical assay to show that they had natural-like catalytic activity, confirming that the enzymes designed were bona fide synthetic chorsimate mutases.</p>
+<p>Many of the artificial variants however did not rescue growth in E. coli. The authors then sought to capture the missing information to explain why some CMs worked while others did not. They trained a logistic regression model as a binary classifier of function on the E. coli select-seq data. With this model as an additional filter on the bmDCA model, the authors were able to accurately predict the subset of artificial CM variants in the library that did rescue function. Significant positions identified by the logistic regression model revealed an arrangement of residues peripheral to the active site, suggesting a potential allosteric or indirect interaction with control over catalytic activity.</p>
+<h2 id="the-issues">The Issues<a class="anchor" href="#the-issues">#</a></h2>
+<p>Put simply, the approach presented in Russ <em>et al.</em> is limited in what it can do:</p>
+<h4 id="1-the-model-can-only-redesign-existing-enzymes">1. The model can only redesign existing enzymes</h4>
+<p>The bmDCA model can learn a specific enzyme, such as chorismate mutase, but it can&rsquo;t extrapolate and design other enzymes. It also cannot make significant changes to the enzyme, it can only design within a sort of sequence-design-space defined by the natural homologs. It cannot add domains, it cannot deliberately modify the shape or fold of the enzyme (although may do so incidentally by sampling the model and changing residues), and it cannot intentially modify properties of the enzyme such as folding stability or solubility.</p>
+<p>It <em><strong>can</strong></em> make new enzymes, by sequence (<em>de novo</em>), that do the same function as the natural variants. The application of this, from a synthetic biologist&rsquo;s perspective, is to design enzymes to function optimally out of their native-context. We call this heterologous protein expression. That is, you need an enzyme with a particular function in your organism of interest, and that organism doesn&rsquo;t natively express that gene.</p>
+<h4 id="2-the-design-success-rate-is-low-not-much-better-than-screening-natural-homologs">2. The design success rate is low, not much better than screening natural homologs</h4>
+<p>The problem however is that currently Russ <em>et al.</em> don&rsquo;t have such a great design success rate. When the authors characterized the natural CM variants, about 38% worked in <em>E. coli</em>. In comparison, the artificial (designed) variants were that characterized and 48% worked! That&rsquo;s not much better. It&rsquo;s literally a coin-flip if the designed enzyme variant works or not. A synthetic biologist might as well just screen natural variants for functional ones in their target host organism.</p>
+<h4 id="3-the-authors-didnt-perform-a-final-round-of-design-with-the-final-bmdca-logistic-regression-hybrid-model">3. The authors didn&rsquo;t perform a final round of design with the final bmDCA-logistic-regression hybrid model</h4>
+<p>The authors somewhat acknowledge the shortcomings of the bmDCA model, and they perform &ldquo;logistic regression&rdquo; in an attempt to compensate for the missing information. They show that the bmDCA-LR model can correctly predict their existing data, but <em><strong>they don&rsquo;t perform another round of design and characterization</strong></em>. I frequently see this in biological engineering research. Authors will do some modeling/design, show a result, show that their final model fits the result, but they often fail to really prove that the model can do true design with increased success.</p>
+<h4 id="4-chorismate-mutase-is-a-relatively-simple-enzyme">4. Chorismate mutase is a relatively simple enzyme</h4>
+<p>I would leave <strong>The Issues</strong> at 1-3, as it makes a succinct story, but then I would fail to mention a key issue that protein engineers would probably raise first. The core catalytic domain of chorismate mutase that was studied in this work is one of the most simple protein folds to modify and design, an αβ-barrel<sup>4</sup>. Why is that an issue? If bmDCA hardly works for this enzyme, how can synthetic biologists expect it to work for anything more complex?</p>
+<h2 id="parting-thoughts">Parting Thoughts<a class="anchor" href="#parting-thoughts">#</a></h2>
+<p>Perhaps in the future the authors can build on this work to make a more sophisticated model that designs with higher accuracy. The bmDCA model <em>can</em> help scientists study enzymes to identify key interactions - without any data at all. That sort of analysis may be valuable to a scientist studying the protein of interest, even if it&rsquo;s not that immediately valuable to synthetic biology.</p>
+<p>More on protein engineering in the future.</p>
+<p>A</p>
+<h3 id="references">References<a class="anchor" href="#references">#</a></h3>
+<ol>
+<li>
+<p>Dill, K. A. &amp; MacCallum, J. L. The protein-folding problem, 50 years on. Science 338, 1042-1046 (2012).</p>
+</li>
+<li>
+<p>Russ, W. P. et al. An evolution-based model for designing chorismate mutase enzymes. Science 369, 440-445 (2020).</p>
+</li>
+<li>
+<p>Morcos, F. et al. Direct-coupling analysis of residue coevolution captures native contacts across many protein families. Proceedings of the National Academy of Sciences 108, E1293-E1301 (2011).</p>
+</li>
+<li>
+<p>MacBeath, G., Kast, P. &amp; Hilvert, D. Redesigning enzyme topology by directed evolution. Science 279, 1958-1961 (1998).</p>
+</li>
+</ol>
+
+
+              
+          </article>
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="/tags/machine-learning/">machine-learning</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="/tags/protein-design/">protein-design</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="/tags/synbio/">synbio</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="/tags/multiplex/">multiplex</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="/tags/ngs/">ngs</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="/blog/post2/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Regulating many genes with CRISPR and ELSAs</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Twitter"
+         href="https://twitter.com/alexcampreis"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="GitHub"
+         href="https://github.com/reisalex"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="LinkedIn"
+         href="https://www.linkedin.com/in/alex-reis-33391864/"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('/svg/linkedin.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="GoogleScholar"
+         href="https://scholar.google.com/citations?user=ZsqVKJwAAAAJ&amp;hl"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('/svg/googlescholar.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="BioRxiv"
+         href="https://www.biorxiv.org/search/author1%3AAlexander%2BC.%2BReis%2B"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('/svg/biorxiv.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Email"
+         href="mailto:alex.camp.reis@gmail.com"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('/svg/email.svg')"></div>
+      </a>
+    
+     
+</div>
+
+<svg id="svg">
+  <defs>
+    <filter id="colorFilter">
+      <feColorMatrix 
+        color-interpolation-filters="sRGB"
+        type="matrix"
+        values="0.23 0   0   0   0
+                0   0.69  0   0   0
+                0   0   0.73  0   0
+                0   0   0   1   0 "/>
+    </filter>
+  </defs>
+</svg>
+            <p>© 2021 Alex Camp Reis</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>
