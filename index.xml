@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alex Camp Reis</title>
+    <link>http://alexcampreis.com/</link>
+    <description>Recent content on Alex Camp Reis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 11 Feb 2024 07:07:07 +0100</lastBuildDate>
+    
+	<atom:link href="http://alexcampreis.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Machine learning attempts de novo protein design</title>
+      <link>http://alexcampreis.com/posts/post3/</link>
+      <pubDate>Sun, 25 Oct 2020 07:07:07 +0100</pubDate>
+      
+      <guid>http://alexcampreis.com/posts/post3/</guid>
+      <description>Model-driven protein engineering is the future of synbio. The ability to engineer proteins to do any chemical conversion imaginable (enzymes) or to perform complex biological tasks like edit or regulate genes would revolutionize the way we engineer biology. Existing tools however remain largely limited in what they can make, with most research still focused on getting designed proteins to fold correctly1, so protein engineering remains one of synthetic biology&amp;rsquo;s grand challenges.</description>
+    </item>
+    
+    <item>
+      <title>Regulating many genes with CRISPR and ELSAs</title>
+      <link>http://alexcampreis.com/posts/post2/</link>
+      <pubDate>Sat, 01 Aug 2020 07:07:07 +0100</pubDate>
+      
+      <guid>http://alexcampreis.com/posts/post2/</guid>
+      <description>Synthetic biologists, our group included, have been drawn by the power of CRISPR technologies1 to completely revolutionize how we program cell behavior, for example, by designing programmable CRISPR-based genetic circuits. Genetic circuits, like digital ones, take input signals from the surrounding environment (e.g. relevant biologics, chemicals, temperature, UV), and through a series of logic gates, perform computation or “signal processing”, with useful output that can be read out or passed to biological actuators within a programmed cell.</description>
+    </item>
+    
+    <item>
+      <title>Using NGS for COVID-19 testing</title>
+      <link>http://alexcampreis.com/posts/post1/</link>
+      <pubDate>Wed, 25 Mar 2020 07:07:07 +0100</pubDate>
+      
+      <guid>http://alexcampreis.com/posts/post1/</guid>
+      <description>Over the last few weeks of the COVID-19 pandemic, limited availability and throughput of the existing COVID-19 test kit has hindered our ability to monitor the global spread of the causal virus, SARS-CoV-2. As of March 24nd, the CDC reported having only tested 4,651 and 83,391 patients across the U.S. in CDC and public health laboratories, respectively, since January 18th &amp;ndash; with the bulk of those tests done within the past week.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://alexcampreis.com/about/</link>
+      <pubDate>Sun, 11 Feb 2024 07:07:07 +0100</pubDate>
+      
+      <guid>http://alexcampreis.com/about/</guid>
+      <description>Alex Reis is a synthetic biologist and protein engineer with a background in biophysical modeling, multiplex CRISPR interference, phage display and antibody engineering. Alex is currently a Principal Scientist at Manifold Bio, a leading biotech startup in biologics discovery. With a background in chemical engineering and synthetic biology, Alex supports the innovation arms in both the wet and dry lab sides of the company. His work has driven the scaling and quantitative accuracy of Manifold&amp;rsquo;s proprietary protein barcoding tech, as well as other (currently unpublished) assays including Φ-seq and more.</description>
+    </item>
+    
+    <item>
+      <title>Open Source Projects</title>
+      <link>http://alexcampreis.com/projects/</link>
+      <pubDate>Sat, 10 Feb 2024 22:55:05 -0400</pubDate>
+      
+      <guid>http://alexcampreis.com/projects/</guid>
+      <description>pyagadir
+An open-source, Python implementation of Munoz &amp;amp; Serrano&amp;rsquo;s AGADIR model of α-helix formation. This model uses statistical mechanics and energy parameters trained on a database of over 400 peptides to predict the α-helical tendency (probability) per residue for a given peptide (see references in source).
+pyfold
+As part of the development effort for RBS Calculator v3.0, I am porting &amp;ldquo;kfold&amp;rdquo; (Fortran) to Cython to allow easier integration and updating of nearest neighbor energy parameters.</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>http://alexcampreis.com/publications/</link>
+      <pubDate>Sat, 10 Feb 2024 22:55:05 -0400</pubDate>
+      
+      <guid>http://alexcampreis.com/publications/</guid>
+      <description>An automated model test system for systematic development and improvement of gene expression models.
+Alexander C. Reis and Howard M. Salis
+ACS Synthetic Biology 2020 [URL]
+A massively parallel COVID-19 diagnostic assay for simultaneous testing of 19200 patient samples.
+Alexander C. Reis, Ayaan Hossain, and Howard M. Salis
+Whitepaper 2020 [URL]
+Automated design of thousands of nonrepetitive parts for engineering stable genetic systems.
+Ayaan Hossain, Eriberto Lopez, Sean M. Halper, Daniel P.</description>
+    </item>
+    
+  </channel>
+</rss>

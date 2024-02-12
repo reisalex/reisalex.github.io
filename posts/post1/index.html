@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        
+        <meta name="description" content="Simple minimalist theme">
+        
+        <meta name="keywords" content="minimalist,blog,goa,hugo,developer">
+
+        <title>
+              Alex Camp Reis - Using NGS for COVID-19 testing 
+        </title>
+
+        <meta name="generator" content="Hugo 0.68.3" />
+
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        
+
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="http://alexcampreis.com/css/main.css">
+        <link rel="stylesheet" href="http://alexcampreis.com/css/custom.css">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <meta name="theme-color" content="#ffffff"></head>
+
+    <body lang="en-US">
+        <div class="container my-auto">
+
+<header class="text-start title">
+  <h1 class="title">Using NGS for COVID-19 testing</h1>
+</header>
+
+<section id="category-pane" class="meta">
+  
+  <div class="d-flex flex-column flex-md-row justify-content-between">
+    <h6 class="text-start meta">
+       PUBLISHED ON MAR 25, 2020
+      
+      / 9 MIN READ
+      
+    </h6>
+  </div>
+  
+</section>
+
+<section id="content-pane">
+  <div class="text-justify content">
+    
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#testing-efforts-in-the-us">Testing Efforts in the U.S.</a></li>
+    <li><a href="#concept-workflow">Concept Workflow</a></li>
+    <li><a href="#understanding-barcodes">Understanding Barcodes</a></li>
+    <li><a href="#additional-multiplexing">Additional Multiplexing</a></li>
+    <li><a href="#time-and-cost-considerations">Time and Cost Considerations</a></li>
+    <li><a href="#disclaimers">Disclaimers</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+    
+    <p>Over the last few weeks of the COVID-19 pandemic, limited availability and throughput of the existing COVID-19 test kit has hindered our ability to monitor the global spread of the causal virus, SARS-CoV-2. As of March 24nd, the CDC <a href="https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/testing-in-us.html">reported</a> having only tested 4,651 and 83,391 patients across the U.S. in CDC and public health laboratories, respectively, since January 18th &ndash; with the bulk of those tests done within the past week. Limited testing &ndash; frequently reserved for critical condition patients &ndash; and the increasing evidence that many infected people are asymptomatic, suggests that many cases are going undiagnosed, contributing to difficulty in containment<sup>1</sup>.</p>
+<p>The current test kit for COVID-19 runs a <a href="https://www.thermofisher.com/us/en/home/life-science/pcr/real-time-pcr/real-time-pcr-learning-center/real-time-pcr-basics.html">Real-Time Reverse Transcriptase (RT)-PCR</a> reaction on an Applied Biosystems 7500 Fast DX Real-Time PCR Instrument, to detect the presence of the viral RNA in up to 22 specimens at a time (see <a href="https://www.cdc.gov/coronavirus/2019-ncov/about/testing.html">CDC Tests for COVID-19</a>, <a href="https://www.fda.gov/media/134922/download">Emergency Use Diagnostic Panel Instructions</a>, and <a href="https://www.cdc.gov/coronavirus/2019-ncov/lab/rt-pcr-detection-instructions.html">Lab Research Use Protocol</a>). In collaboration with my research group, I recently devised an alternate, concept workflow that uses next-generation DNA sequencing (NGS), instead of rRT-PCR, to greatly scale the number of samples that can be assayed simultaneously. This test would work by appending unique DNA sequence &ldquo;barcodes&rdquo; to the nucleic acid (RNA) in each patient sample, followed by sample pooling, high-throughput next-generation sequencing, demultiplexing and counting of patient sequence reads to diagnose on the order of 10,000 patients simultaneously. This approach is naturally scalable and with a few logistics worked out could rapidly test on the order of millions of patients in the event of a major epidemic.</p>
+<p>Here I briefly review the proposed protocol and provide my thoughts on how it can be time and cost competitive at scale. Importantly, at this time the protocol is being experimentally validated, however we are confident that it will work well as it combines the existing CDC workflow with high-throughput barcoding assays that we conduct routinely in our synthetic biology research. Our proposed workflow and supplementary data, including NGS-pipeline and designed non-repetitive DNA sequence barcodes<sup>2</sup> will be available soon via preprint server. Of note, the <code>Python</code> scripts used to generate primers and sequence barcodes acts as a sort of &ldquo;recipe&rdquo; that can be used to design new sets of barcodes in the future, specific to any virus genome.</p>
+<h2 id="testing-efforts-in-the-us">Testing Efforts in the U.S.</h2>
+<p>Within the past two weeks, we&rsquo;ve observed a flurry of activity to address the COVID-19 testing crisis in the United States. The FDA has issued emergency use authorization (EUA) to a number of players around the country such as <a href="https://www.roche.com/media/releases/med-cor-2020-03-13.htm">Roche</a>, <a href="http://thermofisher.mediaroom.com/2020-03-13-FDA-Issues-Emergency-Use-Authorization-to-Thermo-Fisher-Scientific-for-Diagnostic-Test-Used-to-Detect-COVID-19">Thermo Fisher</a>, and <a href="https://www.covid19-response.com/projects">Curative</a> (California) &ndash; to name a few &ndash; to scale and immediately begin using comparable diagnostic tests to detect SARS-CoV-2. These efforts generally use the same core assay (rRT-PCR), but with increased scale by leveraging company infrastructure, such as hiring more technicians, using automated sample handling robotics or running multiple dedicated instruments in parallel. Alternative point-of-care (POC) type assays, similar to that of pregnancy tests, are also being developed that offer to be cheap and provide a rapid readout<sup>3,4</sup>, however manufacturing and availability of these virus-specific tests may be a challenge during a rapid, wide-spread outbreak as we are currently experiencing.</p>
+<p>Testing for virus infection involves many challenges including <a href="https://www.cdc.gov/coronavirus/2019-ncov/lab/guidelines-clinical-specimens.html">collecting relevant clinical specimen type(s)</a>, extracting the genetic material at-scale (see <a href="https://www.the-scientist.com/news-opinion/rna-extraction-kits-for-covid-19-tests-are-in-short-supply-in-us-67250">RNA Extraction Kits for COVID-19 Tests Are in Short Supply in US</a>), obtaining sufficient genetic material with low levels of virus often present, and more. While these challenges are being investigated<sup>5</sup> and need to be addressed immediately, a key bottlekneck to testing many patients during a major outbreak is the inherent lack of scalability of the core rRT-PCR assay.</p>
+<p>Some approaches can be taken to partially scale the current assay. For example, <a href="https://www.cdc.gov/coronavirus/2019-ncov/lab/guidelines-clinical-specimens.html">combining specimen</a> has been recommended by the CDC to be done for specimens of mixed type (e.g. nasopharyngeal and oropharyngeal swabs) to cut the need to run multiple RT-PCR assays for the same patient. Another concept, &ldquo;sample pooling&rdquo;, combines patient samples in small batches, that are tested together, and if the test result is negative, all patients in that batch are deemed negative for the virus, but if the result comes back positive, further testing is conducted on the individuals of that subgroup to determine which were positive<sup>6</sup>.</p>
+<p>We were inspired by the concept of sample pooling and our experience using barcoding sequence variants quantified with NGS<sup>7-9</sup>, to come up with the following workflow.</p>
+<h2 id="concept-workflow">Concept Workflow</h2>
+<p><img src="/img/post1/figure1.png" alt=""></p>
+<p>The workflow is as follows (illustrated above):</p>
+<ol>
+<li>RNA is extracted from patient specimens*.</li>
+<li>Unique barcodes as assigned to each patient.</li>
+<li>Barcoded cDNA is created using Reverse-Transcription (RT).</li>
+<li>Samples are cleaned, concentrated and pooled together**.</li>
+<li>cDNA is amplified with PCR.</li>
+<li>Amplified library is size selected and prepared for sequencing.</li>
+<li>Library is sequenced via next-generation sequencing (NGS)***.</li>
+<li>Reads are demultiplexed for each barcode (patient) and counted.</li>
+</ol>
+<p>A diagnosis is then determined by the number of read counts of virus RNA and control RNAs. Without going into too much detail, simply put, for a given barcode, if reads matching the expected virus sequence are present, the test result is positive.</p>
+<p>*Step 1, RNA extractions, may be optional and alternatives are currently being investigated by other research groups.</p>
+<p>**Steps 1-4 are done in multi-well plate format, optionally with liquid handling robots to greatly increase the processing speeds of these steps.</p>
+<p>***Sequencing platform may be Illumina or Oxford Nanopore (MinION). I will go into details between these in a future post.</p>
+<h2 id="understanding-barcodes">Understanding Barcodes</h2>
+<p>Barcodes are unique DNA sequences designed to identify a variant or a sample in a pool of many. Much like the barcodes you can find on produce in the grocery market, genetic barcodes can be read by a machine, a sequencer. While traditional barcodes are composed of black parallel lines of variable widths, DNA barcodes are instead defined by their nucleotide sequence. Natural DNA consists of four nucleotides: A, T, C, and G. This means at each position in a barcode, you have four unique choices, and for barcodes of length N, you have 4<sup>N</sup> unique possible sequences to choose from.</p>
+<p>For example, here are three 15-nucleotide DNA barcodes:</p>
+<pre><code> ID  | sequence
+ BC1 | AGCTATCGTAGCTTG
+ BC2 | GGAGGAAACCCACCC
+ BC3 | GTAAAAATTTACAGA
+</code></pre><p>The longer the barcodes, the more possible sequences you can choose from and the more possible differences there can be between any two. It turns out designing non-repetitive genetic parts, such as barcodes, within a constrained sequence space is a fascinating problem in itself, one our group has explored<sup>2</sup>.</p>
+<p><img src="/img/post1/figure2.png" alt=""></p>
+<p>Barcodes allow us to &ldquo;tag&rdquo; independent samples, pool them together (multiplex), sequence, then tease apart individual results (demultiplex). For example, let&rsquo;s say we have 3 patients: Patients 1, 2, and 3, and we assign them barcodes: BC1, BC2, and BC3, respectively. Let&rsquo;s say Patients 1 &amp; 3 are infected with SARS-CoV-2 and Patient 2 is not. The workflow uses unique barcoded RT primers for the Reverse Transcription reaction to generate cDNA. Note that since Patient 2 is negative for SARS-CoV-2, and no virus RNA is present in that sample, the RT primer has nothing to bind to and no cDNA-BC2 is synthesized.</p>
+<p>The barcoded cDNA is then pooled together and a common pair of forward and reverse primers are used to amplify the one-pot DNA using Polymerase Chain Reaction (PCR). You may notice this workflow just used RT and PCR. This is an important point. Because this workflow also uses RT-PCR, just not real-time, we can expect similar sensitivity to rRT-PCR, that is, the limit-of-detection is expected to be similar. There is a notion too that RNA-seq (NGS) is not as accurate as rRT-PCR (qPCR), but from our experience, as long as the preprocessing steps are the same and there is sufficient <a href="https://www.nature.com/articles/nrg3642">sequencing depth</a>, they yield equivalent results (R<sup>2</sup>=0.98)<sup>10</sup>.</p>
+<p>Last, the library is sequenced, and a computational pipeline counts occurance of each barcode. The barcoded sequences, or amplicons, are confirmed to match the expected sequence and a count is incremented for the barcode, or corresponding patient. Depending on the counts for virus sequence and other controls, the patients are assigned a test result: positive, negative, inconclusive, or invalid.</p>
+<h2 id="additional-multiplexing">Additional Multiplexing</h2>
+<p><img src="/img/post1/figure3.png" alt=""></p>
+<p>One strength of this workflow is that additional components are naturally multiplexable. If multiple patient samples are taken &ndash; say, spit and swab samples &ndash; they can be combined and the RNA may be extracted together to increase the amount of starting genetic material. Additionally, multiple RT primers may be used together for various target sites on the virus genome and for controls, such as a human RNA control or spike-in DNA controls. In other words, these individual amplicons, which are assayed individually in the rRT-PCR workflow, are assayed together here in ours (above). The result of the workflow are tabulated counts for each unique targeted amplicon, per patient. Beyond these benefits, Illumina sequencers designed for higher throughput can also run multiple libraries simultaneously, meaning sequencing could be done for tens of thousands of patients simultaneously.</p>
+<h2 id="time-and-cost-considerations">Time and Cost Considerations</h2>
+<p><strong>Cost</strong> &ndash; Running the proposed assay would require around $5-10k worth of library prep and sequencing costs on an Illumina platform, and if the assay is run for 10,000 patients, this portion of the workflow would cost a fraction of a dollar per patient &ndash; this is the economy of scale gained by multiplexing. In comparison, the current workflow requires relatively expensive rRT-PCR reagents and probes which are consumed 3 units (reactions) worth per patient.</p>
+<p><strong>Time</strong> &ndash; The proposed workflow could be executed anywhere between 2-5 days, depending on the degree of automation. A 3 day window seems realistic, provided there are dedicated Illumina sequencers. In comparison, the current rRT-PCR workflow takes about a day to complete. We consider a two day lag acceptable since many viruses have long incubation periods and patients (symptomatic or not) would likely already be self isolating in the window that the results are returned.</p>
+<h2 id="disclaimers">Disclaimers</h2>
+<p>As we prototype this concept, I hope to share posts describing our efforts and progress. Realistically, this diagnostic approach could be fully validated and possibly approved by the fall.</p>
+<p>If you want to find out more about COVID-19 and get the latest information on the pandemic, please visit the WHO website at <a href="https://www.who.int/">https://www.who.int/</a>.</p>
+<p>If you&rsquo;re in the United States and have questions about development and performance of diagnostic tests for SARS-CoV-2, please visit <a href="https://www.fda.gov/medical-devices/emergency-situations-medical-devices/faqs-diagnostic-testing-sars-cov-2">FAQs on Diagnostic Testing for SARS-CoV-2</a>.</p>
+<h2 id="references">References</h2>
+<ol>
+<li>
+<p>Li, R., Pei, S., Chen, B., Song, Y., Zhang, T., Yang, W., &amp; Shaman, J. (2020). Substantial undocumented infection facilitates the rapid dissemination of novel coronavirus (SARS-CoV2). Science.</p>
+</li>
+<li>
+<p>Hossain, A., Lopez, E., Halper, S. M., Cetnar, D. P., Reis, A. C., Strickland, D., Klavins, E., Salis, H. M. (2020). Automated design of thousands of highly non-repetitive genetic parts for engineering evolutionary robust genetic systems. <em>Accepted</em>.</p>
+</li>
+<li>
+<p>Myhrvold, C., Freije, C. A., Gootenberg, J. S., Abudayyeh, O. O., Metsky, H. C., Durbin, A. F., &hellip; &amp; Garcia, K. F. (2018). Field-deployable viral diagnostics using CRISPR-Cas13. <em>Science</em>, 360(6387), 444-448.</p>
+</li>
+<li>
+<p>Broughton, J. P., Deng, X., Yu, G., Fasching, C. L., Singh, J., Streithorst, J., &hellip; &amp; Hsu, E. (2020). Rapid Detection of 2019 Novel Coronavirus SARS-CoV-2 Using a CRISPR-based DETECTR Lateral Flow Assay. <em>medRxiv</em>.</p>
+</li>
+<li>
+<p>Bruce, A. E., Tighe, S., et al. (2020). RT-qPCR detection of SARS-CoV-2 RNA from patient nasopharyngeal swab using QIAGEN RNEasy kits or directly via omission of an RNA extraction step. <em>biorxiv</em>.</p>
+</li>
+<li>
+<p>Bilder, C. R., &amp; Tebbs, J. M. (2012). Pooled‐testing procedures for screening high volume clinical specimens in heterogeneous populations. <em>Statistics in medicine</em>, 31(27), 3261-3268.</p>
+</li>
+<li>
+<p>Knapp, M., Stiller, M., &amp; Meyer, M. (2012). Generating barcoded libraries for multiplex high-throughput sequencing. In <em>Ancient DNA</em> (pp. 155-170). Humana Press.</p>
+</li>
+<li>
+<p>Kosuri, S., Goodman, D. B., Cambray, G., Mutalik, V. K., Gao, Y., Arkin, A. P., &hellip; &amp; Church, G. M. (2013). Composability of regulatory sequences controlling transcription and translation in Escherichia coli. <em>Proceedings of the National Academy of Sciences</em>, 110(34), 14024-14029.</p>
+</li>
+<li>
+<p>Goodman, D. B., Church, G. M., &amp; Kosuri, S. (2013). Causes and effects of N-terminal codon bias in bacterial genes. <em>Science</em>, 342(6157), 475-479.</p>
+</li>
+<li>
+<p>Reis, A. C., Halper, S. M., Vezeau, G. E., Cetnar, D. P., Hossain, A., Clauer, P. R., &amp; Salis, H. M. (2019). Simultaneous repression of multiple bacterial genes using nonrepetitive extra-long sgRNA arrays. <em>Nature biotechnology</em>, 37(11), 1294-1301.</p>
+</li>
+</ol>
+
+  </div>
+</section>
+
+<section id="tag-pane" class="meta">
+  
+  <div class="d-flex flex-column flex-md-row justify-content-between">
+    <h6 class="text-end meta">
+      
+    </h6>
+  </div>
+  
+</section>
+
+
+
+
+
+
+
+<section id="menu-pane" class="menu text-center">
+  
+  <nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+      
+      
+
+      <li class="menu-item">
+        
+        <a class="menu-item" href="/posts">posts</a>
+        
+        <span class="menu-item">&nbsp;|&nbsp;</span>
+        
+      </li>
+
+      
+      <li class="menu-item">
+        <a class="menu-item" href="http://alexcampreis.com/posts/post2/">next &gt;</a>
+      </li>
+      
+      
+    </ul>
+  </nav>
+  
+  <h4 class="text-center mt-3"><a class="menu-item" href="http://alexcampreis.com/">home</a></h4>
+</section>
+
+<footer class="text-center footer">
+  <hr />
+  
+  <h6 class="text-center copyright">© 2024. Alex Reis. <a href="http://creativecommons.org/licenses/by/3.0/">Some Rights Reserved</a>.</h6>
+  
+  
+  
+
+</footer>
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+
+<script>hljs.highlightAll();</script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="/js/custom.js"></script>
+</body>
+
+</html>
+
