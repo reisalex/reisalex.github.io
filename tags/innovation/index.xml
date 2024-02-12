@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>innovation on Alex Camp Reis</title>
+    <link>http://alexcampreis.com/tags/innovation/</link>
+    <description>Recent content in innovation on Alex Camp Reis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 10 Feb 2024 22:55:05 -0400</lastBuildDate>
+    
+	<atom:link href="http://alexcampreis.com/tags/innovation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Open Source Projects</title>
+      <link>http://alexcampreis.com/projects/</link>
+      <pubDate>Sat, 10 Feb 2024 22:55:05 -0400</pubDate>
+      
+      <guid>http://alexcampreis.com/projects/</guid>
+      <description>pyagadir
+An open-source, Python implementation of Munoz &amp;amp; Serrano&amp;rsquo;s AGADIR model of α-helix formation. This model uses statistical mechanics and energy parameters trained on a database of over 400 peptides to predict the α-helical tendency (probability) per residue for a given peptide (see references in source).
+pyfold
+As part of the development effort for RBS Calculator v3.0, I am porting &amp;ldquo;kfold&amp;rdquo; (Fortran) to Cython to allow easier integration and updating of nearest neighbor energy parameters.</description>
+    </item>
+    
+  </channel>
+</rss>

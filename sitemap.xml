@@ -3,104 +3,88 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/blog/post3/</loc>
-    <lastmod>2020-10-25T00:00:00+00:00</lastmod>
+    <loc>http://alexcampreis.com/posts/post3/</loc>
+    <lastmod>2020-10-25T07:07:07+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/post2/</loc>
-    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
+    <loc>http://alexcampreis.com/posts/post2/</loc>
+    <lastmod>2020-08-01T07:07:07+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/post1/</loc>
-    <lastmod>2020-03-25T00:00:00+00:00</lastmod>
+    <loc>http://alexcampreis.com/posts/post1/</loc>
+    <lastmod>2020-03-25T07:07:07+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-10-25T00:00:00+00:00</lastmod>
+    <loc>http://alexcampreis.com/about/</loc>
+    <lastmod>2024-02-11T07:07:07+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/</loc>
-    <lastmod>2020-10-25T00:00:00+00:00</lastmod>
+    <loc>http://alexcampreis.com/tags/about/</loc>
+    <lastmod>2024-02-11T07:07:07+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/machine-learning/</loc>
-    <lastmod>2020-10-25T00:00:00+00:00</lastmod>
+    <loc>http://alexcampreis.com/categories/about/</loc>
+    <lastmod>2024-02-11T07:07:07+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/multiplex/</loc>
-    <lastmod>2020-10-25T00:00:00+00:00</lastmod>
+    <loc>http://alexcampreis.com/</loc>
+    <lastmod>2024-02-11T07:07:07+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/ngs/</loc>
-    <lastmod>2020-10-25T00:00:00+00:00</lastmod>
+    <loc>http://alexcampreis.com/categories/</loc>
+    <lastmod>2024-02-11T07:07:07+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/protein-design/</loc>
-    <lastmod>2020-10-25T00:00:00+00:00</lastmod>
+    <loc>http://alexcampreis.com/tags/</loc>
+    <lastmod>2024-02-11T07:07:07+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/synbio/</loc>
-    <lastmod>2020-10-25T00:00:00+00:00</lastmod>
+    <loc>http://alexcampreis.com/tags/alex-reis/</loc>
+    <lastmod>2024-02-10T22:55:05-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-10-25T00:00:00+00:00</lastmod>
+    <loc>http://alexcampreis.com/tags/innovation/</loc>
+    <lastmod>2024-02-10T22:55:05-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/crispr/</loc>
-    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
+    <loc>http://alexcampreis.com/projects/</loc>
+    <lastmod>2024-02-10T22:55:05-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/elsa/</loc>
-    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
+    <loc>http://alexcampreis.com/categories/projects/</loc>
+    <lastmod>2024-02-10T22:55:05-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/regulation/</loc>
-    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
+    <loc>http://alexcampreis.com/tags/publication/</loc>
+    <lastmod>2024-02-10T22:55:05-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/covid19/</loc>
-    <lastmod>2020-03-25T00:00:00+00:00</lastmod>
+    <loc>http://alexcampreis.com/publications/</loc>
+    <lastmod>2024-02-10T22:55:05-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/diagnostics/</loc>
-    <lastmod>2020-03-25T00:00:00+00:00</lastmod>
+    <loc>http://alexcampreis.com/categories/publications/</loc>
+    <lastmod>2024-02-10T22:55:05-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/sarscov2/</loc>
-    <lastmod>2020-03-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/about/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>/projects/</loc>
-  </url>
-  
-  <url>
-    <loc>/publications/</loc>
+    <loc>http://alexcampreis.com/posts/</loc>
+    <lastmod>2020-10-25T07:07:07+01:00</lastmod>
   </url>
   
 </urlset>

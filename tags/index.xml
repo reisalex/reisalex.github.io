@@ -1,109 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Alexander C. Reis</title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on Alexander C. Reis</description>
+    <title>Tags on Alex Camp Reis</title>
+    <link>http://alexcampreis.com/tags/</link>
+    <description>Recent content in Tags on Alex Camp Reis</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© {year} Alex Camp Reis</copyright>
-    <lastBuildDate>Sun, 25 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <lastBuildDate>Sun, 11 Feb 2024 07:07:07 +0100</lastBuildDate>
+    
+	<atom:link href="http://alexcampreis.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
-      <title>machine-learning</title>
-      <link>/tags/machine-learning/</link>
-      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      <title>about</title>
+      <link>http://alexcampreis.com/tags/about/</link>
+      <pubDate>Sun, 11 Feb 2024 07:07:07 +0100</pubDate>
       
-      <guid>/tags/machine-learning/</guid>
+      <guid>http://alexcampreis.com/tags/about/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>multiplex</title>
-      <link>/tags/multiplex/</link>
-      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      <title>Alex Reis</title>
+      <link>http://alexcampreis.com/tags/alex-reis/</link>
+      <pubDate>Sat, 10 Feb 2024 22:55:05 -0400</pubDate>
       
-      <guid>/tags/multiplex/</guid>
+      <guid>http://alexcampreis.com/tags/alex-reis/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>ngs</title>
-      <link>/tags/ngs/</link>
-      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      <title>innovation</title>
+      <link>http://alexcampreis.com/tags/innovation/</link>
+      <pubDate>Sat, 10 Feb 2024 22:55:05 -0400</pubDate>
       
-      <guid>/tags/ngs/</guid>
+      <guid>http://alexcampreis.com/tags/innovation/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>protein-design</title>
-      <link>/tags/protein-design/</link>
-      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      <title>publication</title>
+      <link>http://alexcampreis.com/tags/publication/</link>
+      <pubDate>Sat, 10 Feb 2024 22:55:05 -0400</pubDate>
       
-      <guid>/tags/protein-design/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>synbio</title>
-      <link>/tags/synbio/</link>
-      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/synbio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>crispr</title>
-      <link>/tags/crispr/</link>
-      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/crispr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>elsa</title>
-      <link>/tags/elsa/</link>
-      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/elsa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>regulation</title>
-      <link>/tags/regulation/</link>
-      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/regulation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>covid19</title>
-      <link>/tags/covid19/</link>
-      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/covid19/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>diagnostics</title>
-      <link>/tags/diagnostics/</link>
-      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/diagnostics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sarscov2</title>
-      <link>/tags/sarscov2/</link>
-      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/sarscov2/</guid>
+      <guid>http://alexcampreis.com/tags/publication/</guid>
       <description></description>
     </item>
     
